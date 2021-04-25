@@ -1,0 +1,68 @@
+body{
+    background-color:rgb(18, 9, 32);
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(183, 238, 255); 
+}
+
+h4{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 164, 44); 
+}
+
+ul.js-toDoList{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    color:rgb(255, 255, 255); 
+}
+/* li 가운데 정렬을  padding-left로 야매처리... css 공부 해야겠다;;;*/
+li{
+    display: flex;
+    text-align: center;
+    padding-left: 41%;
+}
+
+
+.js-weather{
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(183, 238, 255); 
+}
+
+.js-toDoForm{
+    text-align: center;
+}
+
+.form, .greetings{
+    display: none;
+    text-align: center;
+}
+
+.showing{
+    display:block ;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
